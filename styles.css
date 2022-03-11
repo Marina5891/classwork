@@ -15,6 +15,43 @@ button {
     background-size: contain;
 }
 
+/* Добавлены стили для поискового окошка */
+
+.search {
+    width: 180px;
+    height: 30px;
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: lemonchiffon;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 140px;
+
+    box-sizing: border-box;
+}
+
+.search input[type='button'] { 
+    width: 30px; 
+    height: 30px;
+    background: url('assets/search.png') no-repeat white;
+}
+
+.search input:first-child:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+/* ----- */
+
 .card-list {
     display: flex;
     flex-wrap: wrap;

@@ -27,7 +27,7 @@ const slowpoke = new Pokemon('Slowpoke', ['wisdom', 'psycho', 'smile'], 101, './
 const cardList = document.querySelector('.card-list');
 const card = document.querySelector('.card');
 
-const fillPokemonCard = (pokemon) => {
+export const fillPokemonCard = (pokemon) => {
     const cloneCard = card.cloneNode(true);
     const title = cloneCard.querySelector('h3');
     const image = cloneCard.querySelector('img');
